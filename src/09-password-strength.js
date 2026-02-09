@@ -27,4 +27,74 @@
  */
 export function checkPasswordStrength(password) {
   // Your code here
+  if (typeof password !== "string" || password === "") {
+    return "weak";
+  }
+  
+  let criteriaMet = 0;
+  
+  if (password.length >= 8) {
+    criteriaMet = criteriaMet + 1;
+  }
+  
+  let hasUppercase = false;
+  for (let i = 0; i < password.length; i++) {
+    if (password[i] >= 'A' && password[i] <= 'Z') {
+      hasUppercase = true;
+      break;
+    }
+  }
+  if (hasUppercase) {
+    criteriaMet = criteriaMet + 1;
+  }
+  
+  let hasLowercase = false;
+  for (let i = 0; i < password.length; i++) {
+    if (password[i] >= 'a' && password[i] <= 'z') {
+      hasLowercase = true;
+      break;
+    }
+  }
+  if (hasLowercase) {
+    criteriaMet = criteriaMet + 1;
+  }
+  
+  let hasNumber = false;
+  for (let i = 0; i < password.length; i++) {
+    if (password[i] >= '0' && password[i] <= '9') {
+      hasNumber = true;
+      break;
+    }
+  }
+  if (hasNumber) {
+    criteriaMet = criteriaMet + 1;
+  }
+  
+  let hasSpecial = false;
+  let specialChars = "!@#$%^&*()_+-=[]{}|;:,.<>?";
+  for (let i = 0; i < password.length; i++) {
+    for (let j = 0; j < specialChars.length; j++) {
+      if (password[i] === specialChars[j]) {
+        hasSpecial = true;
+        break;
+      }
+    }
+    if (hasSpecial) {
+      break;
+    }
+  }
+  if (hasSpecial) {
+    criteriaMet = criteriaMet + 1;
+  }
+  
+  if (criteriaMet <= 1) {
+    return "weak";
+  } else if (criteriaMet === 2 || criteriaMet === 3) {
+    return "medium";
+  } else if (criteriaMet === 4) {
+    return "strong";
+  } else {
+    return "very strong";
+  }
 }
+

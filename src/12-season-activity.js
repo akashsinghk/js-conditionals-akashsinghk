@@ -32,4 +32,34 @@
  */
 export function getSeasonActivity(month, temperature) {
   // Your code here
+  if (month < 1 || month > 12) {
+    return null;
+  }
+  
+  const seasons = {
+    Winter: [12, 1, 2],
+    Spring: [3, 4, 5],
+    Summer: [6, 7, 8],
+    Autumn: [9, 10, 11]
+  };
+  
+  let season;
+  for (let s in seasons) {
+    if (seasons[s].includes(month)) {
+      season = s;
+      break;
+    }
+  }
+  
+  const activityRules = {
+    Winter: temperature < 0 ? "skiing" : "ice skating",
+    Spring: temperature > 20 ? "hiking" : "museum visit",
+    Summer: temperature > 35 ? "swimming" : "cycling",
+    Autumn: temperature > 15 ? "nature walk" : "reading at a cafe"
+  };
+  
+  const activity = activityRules[season];
+  
+  return { season, activity };
 }
+
