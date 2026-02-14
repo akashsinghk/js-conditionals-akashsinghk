@@ -14,7 +14,7 @@
  *
  * Strength levels based on how many criteria are met:
  *   - 0–1 criteria → "weak"
- *   - 2–3 criteria → "medium"
+ *   - 2–3 criteria → "medium"e
  *   - 4 criteria   → "strong"
  *   - All 5        → "very strong"
  *

@@ -6,7 +6,7 @@
  * temperature (in Celsius) and whether it's raining, the app should
  * display helpful advice to hikers.
  *
- * Advisory Rules (check in this exact order):
+ * Advisory Rules (check in this exact order):r
  *   - temp >= 35              → "Too hot for hiking - stay indoors and hydrate"
  *   - temp >= 25 and no rain  → "Great weather for hiking - don't forget sunscreen"
  *   - temp >= 25 and raining  → "Warm but rainy - consider indoor activities"

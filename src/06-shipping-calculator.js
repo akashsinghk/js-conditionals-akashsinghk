@@ -30,13 +30,10 @@
  */
 export function calculateShipping(weight, country, orderTotal) {
   // Your code here
-
-  // Validate inputs
   if (weight <= 0 || orderTotal < 0) {
     return -1;
   }
 
-  // Check for free shipping
   if (country === "US" && orderTotal > 50) {
     return 0;
   }
@@ -45,7 +42,6 @@ export function calculateShipping(weight, country, orderTotal) {
     return 0;
   }
 
-  // Calculate domestic shipping (US)
   if (country === "US") {
     if (weight <= 1) {
       return 5;
@@ -56,7 +52,7 @@ export function calculateShipping(weight, country, orderTotal) {
     }
   }
 
-  // Calculate international shipping
+  
   if (weight <= 1) {
     return 15;
   } else if (weight <= 5) {

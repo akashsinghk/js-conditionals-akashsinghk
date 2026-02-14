@@ -21,7 +21,7 @@
  *   - Autumn + temp > 15    → "nature walk"
  *   - Autumn + temp <= 15   → "reading at a cafe"
  *
- * Return an object: { season: string, activity: string }
+ * Return an object: { season: string, activity: string }g
  *
  * Rules:
  *   - If month is not 1–12, return null

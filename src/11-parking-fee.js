@@ -29,7 +29,7 @@
  *   - car, 24 hours   → $5 + 23×$3 = $74 → capped at $30
  *
  * @param {number} hours - Number of hours parked
- * @param {string} vehicleType - "car", "motorcycle", or "bus"
+ * @param {string} vehicleType - "car", "motorcycle", or "bus"e
  * @returns {number} Parking fee or -1 for invalid input
  */
 export function calculateParkingFee(hours, vehicleType) {

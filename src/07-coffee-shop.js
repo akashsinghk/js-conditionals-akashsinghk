@@ -19,7 +19,7 @@
  * Optional extras:
  *   - whippedCream → +$0.50 (if true)
  *   - extraShot    → +$0.75 (if true)
- *
+ *d
  * Rules:
  *   - If size is not "small", "medium", or "large", return -1
  *   - If type is not "regular", "latte", "cappuccino", or "mocha", return -1

@@ -20,7 +20,7 @@
  *   - No valid card:
  *     { allowed: false, message: "Invalid library card - please renew at the front desk" }
  *
- *   - Has overdue books:
+ *   - Has overdue books:n
  *     { allowed: false, message: "Please return your X overdue book(s) first" }
  *     (replace X with the actual number of overdue books)
  *

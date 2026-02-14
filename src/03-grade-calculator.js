@@ -6,7 +6,7 @@
  * rewards students who earned extra credit by adding 5 bonus points
  * to their score — but the final score can never go above 100.
  *
- * Grading Scale:
+ * Grading Scale:n
  *   - 90–100 → "A"
  *   - 80–89  → "B"
  *   - 70–79  → "C"

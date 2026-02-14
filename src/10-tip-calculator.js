@@ -7,7 +7,7 @@
  *
  * Service Rating → Tip Percentage:
  *   - 1 (terrible)  → 5%
- *   - 2 (poor)      → 10%
+ *   - 2 (poor)      → 10%w
  *   - 3 (okay)      → 15%
  *   - 4 (good)      → 20%
  *   - 5 (excellent) → 25%
